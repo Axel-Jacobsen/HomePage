@@ -4,26 +4,16 @@ body {
 .total {
   display: flex;
   flex-direction: column;
-  align-items: center; }
-
-.searchContainer {
-  display: flex;
   justify-content: center; }
-
-.search {
-  padding: 1rem;
-  border: 0px none transparent;
-  outline: none;
-  background-color: transparent;
-  font-size: 2rem;
-  text-align: center; }
 
 .imgContainer {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-self: center; }
 
 .centerImage {
-  height: 500px;
-  width: auto; }
+  height: 600px;
+  width: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 /*# sourceMappingURL=main.css.map */
