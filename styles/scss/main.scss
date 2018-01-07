@@ -1,0 +1,41 @@
+body {
+    // background
+    background-color: #EFE5DC;
+}
+
+.total {
+    // flex
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchContainer {
+    //flex
+    display: flex;
+    justify-content: center
+}
+
+.search {
+    // structure
+    padding: 1rem;
+    border: 0px none transparent;
+    outline: none;
+    // background
+    background-color: transparent;
+    // text
+    font-size: 2rem;
+    text-align: center;
+}
+
+.imgContainer {
+    // flex
+    display: flex;
+    justify-content: center;
+}
+
+.centerImage {
+    // structure
+    height: 500px;
+    width: auto;
+}
