@@ -5,7 +5,7 @@ var images = [
 
 function choosePic() {
     var randomNum = Math.floor(Math.random() * images.length);
-    document.getElementById("background").src = "WallPapers/" + images[randomNum];
+    document.getElementById("centerImage").src = "WallPapers/" + images[randomNum];
 }
 
 window.onload = choosePic;

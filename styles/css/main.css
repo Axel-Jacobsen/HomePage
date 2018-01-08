@@ -1,19 +1,32 @@
-body {
-  background-color: #EFE5DC; }
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #EFE5DC;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center; }
 
 .total {
   display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%; }
 
 .imgContainer {
-  display: flex;
-  justify-content: center;
-  align-self: center; }
+  flex: none; }
 
 .centerImage {
-  height: 600px;
+  height: 500px;
   width: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.weatherContainer {
+  flex: none; }
+
+.wi {
+  font-size: 100px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <title>HomePage</title>
-     <script src="scripts/require.js"></script>
-     <script src="scripts/search.js"></script>
-     <script src="scripts/weather.js"></script>
-     <script src="scripts/imagepicker.js"></script>
-     <link rel="stylesheet" href="styles/css/main.css">
+    <title>HomePage</title>
+    <script src="bundle.js"></script>
+    <!-- <script src="scripts/weather.js"></script> -->
+    <script src="scripts/imagepicker.js"></script>
+    <link rel="stylesheet" href="styles/css/main.css">
+    <link rel="stylesheet" href="styles/css/weather-icons.min.css">
 </head>
 <body>
     <div class="total">
         <div class="imgContainer">
-            <img src="" alt="A saucy little image, no?" class="centerImage" id="background">
+            <img class="centerImage" src="" alt="A saucy little image, no?" id="centerImage">
+        </div>
+        <div class="weatherContainer">
+            <div class="weatherMain">
+                <i class="wi wi-day-sunny"></i>
+                <p class="temperature"></p>
+            </div>
+            <div class="weatherOther">
+                <!-- Wind -->
+                <!-- Humidity -->
+            </div>
         </div>
     </div>
 </body>
 </html>
+
+<!-- <script type="text/javascript" src="https://api.checkwx.com/widgets/metartaf.js"></script> -->
+<!-- <div class="checkwx-container" data-type="METAR" data-station="CYVR"></div> -->
