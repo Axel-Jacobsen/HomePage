@@ -41580,32 +41580,91 @@ module.exports = (function() {
 
 var weather = require('weather-js');
 
-weather.find({search: 'Vancouver, BC', degreeType: 'C'}, function(err, result) {
-  if(err) console.log(err);
+function choosePic () {
 
-    console.log(result);
+    var images = ['jvJVefx.jpg', 'EeE9J.jpg', 'aZScqx6.jpg', 'n0x244u8ajez.png', 'PsDD5FK.jpg', 'AhgFudA.jpg', 'Y7tO223.jpg', 'hZ52wIX.jpg', 'paiv3jU.jpg', 'BQ6KjPa.jpg', 'kWr2TCv.jpg', 'xtRaaY5.jpg', 'rEOPhmL.jpg', 'NO8ccpA.jpg', 'ra6M5zu.jpg', '6mnK4D0.jpg', '8Bq53xj.jpg', '1Qcwduq.jpg', 'f0ghN9G.jpg', 'Xik4G4c.jpg', 'Fq14Fsk.jpg', 'w7g4Tex.jpg', 'cgVCtwd.jpg', 'vnHhC5m.jpg', 'QqffsPx.jpg', 'q6Zfn7p.jpg', 'uasqmx0nfuhz.jpg', 'vwVqjMP.jpg', 'hbbpjec.jpg', 'AW16Y0i.jpg', 'XNjq5dC.jpg', 'Z7FLI6v.jpg', 'YWMo1IJ.jpg', 'q5u0Ngd.jpg', 'L6w1YUN.jpg', 'UZH8X4x.jpg', 'afBGhhB.jpg', 'X0sd0Ho.jpg', '7SqL0BC.jpg', 'ra6M5zu-2.jpg', '2dGXJp7.jpg', '3Dap2EL.jpg', 'sDsSu0m.jpg', 'hs6EUln.jpg', 'oSiYCN3.jpg', 'unbenannt3yywl.jpg', 'TNAG0Po.jpg', '2rQoBh8.jpg', 'GLi3zS6.jpg', 'SanFrancisco.jpg', 'VebP6Ol.jpg', '5bKd1fd.jpg', '1k3VaGh.jpg', 'uENexRC.jpg', 'eexbpm62e1601.jpg', 'QiUF7XB.jpg', 'GGYgJ0G.jpg', 'mQUd1tO.jpg', 'h8R5xMB.jpg', 'IW7I8dT.jpg', 'AdF1fVN.jpg', 'vQA6IsA.jpg', 'Spaceshuttle-Trough-Clouds.jpg']
 
-  var iconTable = {
-	'01d': 'wi-day-sunny',
-	'02d': 'wi-day-cloudy',
-	'03d': 'wi-cloudy',
-	'04d': 'wi-cloudy-windy',
-	'09d': 'wi-showers',
-	'10d': 'wi-rain',
-	'11d': 'wi-thunderstorm',
-	'13d': 'wi-snow',
-	'50d': 'wi-fog',
-	'01n': 'wi-night-clear',
-	'02n': 'wi-night-cloudy',
-	'03n': 'wi-night-cloudy',
-	'04n': 'wi-night-cloudy',
-	'09n': 'wi-night-showers',
-	'10n': 'wi-night-rain',
-	'11n': 'wi-night-thunderstorm',
-	'13n': 'wi-night-snow',
-	'50n': 'wi-night-alt-cloudy-windy'
+    var randomNum = Math.floor(Math.random() * images.length);
+    document.getElementById("centerImage").src = "WallPapers/" + images[randomNum];
 }
-});
+
+function getWeather () {
+    weather.find({search: 'Vancouver, BC', degreeType: 'C'}, function(err, result) {
+        if(err) console.log(err);
+
+        // ADD ALERT FUNCTIONALIFY
+        var skycode = result[0].current.skycode;
+        var skytext = result[0].current.skytext;
+        var temperature = result[0].current.temperature;
+        var wind = result[0].current.winddisplay;
+
+        var iconTable = {
+            '31': 'wi-stars',
+            '32': 'wi-day-sunny',
+            '5': 'wi-rain-mix',
+            '6': 'wi-rain-mix',
+            '7': 'wi-sleet',
+            '8': 'wi-snowflake-cold',
+            '9': 'wi-rain',
+            '11': 'wi-rain',
+            '12': 'wi-rain',
+            '13': 'wi-snow',
+            '14': 'wi-snow',
+            '16': 'wi-snow',
+            '42': 'wi-snow',
+            '43': 'wi-snow',
+            '15': 'wi-snow-wind',
+            '18': 'wi-showers',
+            '40': 'wi-showers',
+            '19': 'wi-dust',
+            '20': 'wi-fog',
+            '21': 'wi-smog',
+            '22': 'wi-smoke',
+            '23': 'wi-strong-wind',
+            '24': 'wi-strong-wind',
+            '3': 'wi-thunderstorm',
+            '4': 'wi-thunderstorm',
+            '17': 'wi-thunderstorm',
+            '35': 'wi-thunderstorm',
+            '25': 'wi-snowflake-cold',
+            '26': 'wi-cloudy',
+            '27': 'wi-night-partly-cloudy',
+            '29': 'wi-night-partly-cloudy',
+            '33': 'wi-night-partly-cloudy',
+            '28': 'wi-day-cloudy',
+            '30': 'wi-day-cloudy',
+            '34': 'wi-day-cloudy',
+            '36': 'wi-hot',
+            '37': 'wi-thunderstorm',
+            '38': 'wi-thunderstorm',
+            '39': 'wi-showers',
+            '41': 'wi-snow-wind',
+            '45': 'wi-night-showers',
+            '46': 'wi-night-snow',
+            '47': 'wi-night-thunderstorm',
+        }
+
+        if (skycode in iconTable) {
+            var icon = iconTable[skycode];
+        } else {
+            var icon = "wi-train";
+        }
+
+        console.log(skycode); console.log(temperature); console.log(skytext); console.log(wind);
+
+        document.getElementById("weathericon").className = 'wi '+icon;
+        document.getElementById("temperature").innerHTML = temperature + " &deg;C";
+        document.getElementById("skytext").innerHTML     = skytext;
+        document.getElementById("wind").innerHTML        = wind;
+    });
+}
+
+function mainFunc () {
+    getWeather();
+    choosePic();
+}
+
+window.onload = mainFunc;
 
 },{"weather-js":163}],193:[function(require,module,exports){
 

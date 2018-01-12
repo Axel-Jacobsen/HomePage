@@ -1,15 +1,17 @@
 // Main style fyle
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway');
+
 html, body {
-    // structure
-    height: 100%;
-    width: 100%;
-    // background
-    background-color: #EFE5DC;
     // flex
     display: flex;
     display: -webkit-flex;
     justify-content: center;
     align-items: center;
+    // structure
+    height: 100%;
+    width: 100%;
+    // background
+    background-color: #EFE5DC;
 }
 
 .total {
@@ -17,20 +19,22 @@ html, body {
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
+    flex-basis: auto;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     // structure
+    height: 100%;
     width: 100%;
 }
 
 .imgContainer {
-    // flex
-    flex: none;
 }
 
 .centerImage {
+    // flex
+    flex-shrink: 1;
     // structure
-    height: 500px;
+    height: 400px;
     width: auto;
     // extra
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -38,7 +42,15 @@ html, body {
 
 .weatherContainer {
     // flex
-    flex: none;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    // text
+    text-align: center;
+    font-family: 'Open Sans', serif;
+    font-size: 18px;
 }
 
 .wi {
