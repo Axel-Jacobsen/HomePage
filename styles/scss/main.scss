@@ -44,13 +44,18 @@ html, body {
     // flex
     display: flex;
     display: -webkit-flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     // text
     text-align: center;
     font-family: 'Open Sans', serif;
     font-size: 18px;
+    // structure
+    margin-left: 24px;
+}
+
+.temperature {
+    font-size: 48px;
 }
 
 .wi {

@@ -27,12 +27,15 @@ html, body {
 .weatherContainer {
   display: flex;
   display: -webkit-flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
   text-align: center;
   font-family: 'Open Sans', serif;
-  font-size: 18px; }
+  font-size: 18px;
+  margin-left: 24px; }
+
+.temperature {
+  font-size: 48px; }
 
 .wi {
   font-size: 100px; }
