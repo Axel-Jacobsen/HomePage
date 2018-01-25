@@ -7,11 +7,14 @@ html, body {
     display: -webkit-flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin: auto;
+
     // structure
     height: 100%;
     width: 100%;
     // background
-    background-color: rgb(223, 209, 196);
+    background-color: rgb(173, 157, 142);
 }
 
 .horiz {
@@ -20,38 +23,31 @@ html, body {
     display: -webkit-flex;
     flex-direction: row;
     flex-basis: auto;
-    align-items: center;
+    align-items: center; 
     justify-content: space-evenly;
     // structure
-    height: 100%;
     width: 100%;
 }
 
-.imgContainer {
+.time {
+    font-family: 'Open Sans', serif;
+    font-size: 64px;
+    margin: 0;
 }
 
 .centerImage {
-    // flex
-    flex-shrink: 1;
     // structure
-    height: 400px;
+    height: 450px;
     width: auto;
     // extra
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.weatherContainer {
-    // flex
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column;
-    align-items: center;
-    // text
+.right {
+    align-self: flex-end;
     text-align: center;
     font-family: 'Open Sans', serif;
     font-size: 18px;
-    // structure
-    margin-left: 24px;
 }
 
 .temperature {
