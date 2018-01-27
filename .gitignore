@@ -8,6 +8,9 @@ __pycache__/
 # *.map
 .sass-cache
 
+# Mac Specifics
+*.icloud
+
 # Distribution / packaging
 .Python
 env/

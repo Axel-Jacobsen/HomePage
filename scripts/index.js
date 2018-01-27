@@ -16,7 +16,6 @@ function getWeather () {
     weather.find({search: 'Vancouver, BC', degreeType: 'C'}, function(err, result) {
         if(err) console.log(err);
 
-        // ADD ALERT FUNCTIONALIFY
         var skycode = result[0].current.skycode;
         var skytext = result[0].current.skytext;
         var temperature = result[0].current.temperature;

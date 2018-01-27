@@ -41674,10 +41674,25 @@ function getWeather () {
     });
 }
 
+function metar () {
+  var n = "metar";
+  var a = "metar";
+  ! function(t, a, n) {
+      var d = new XMLHttpRequest;
+      d.onreadystatechange = function() {
+          if (this.readyState === XMLHttpRequest.DONE && 200 === this.status) {
+              var t = JSON.parse(this.responseText);
+              console.log(t)
+          }
+      }, d.open("GET", "https://api.checkwx.com/" + a.toLowerCase() + "/" + t, !0), d.setRequestHeader("X-API-KEY", k), d.send()
+    }('CYVR' || "", n, t[a])
+}
+
 function mainFunc () {
-    getWeather();
-    choosePic();
-    startTime();
+  getWeather();
+  choosePic();
+  startTime();
+  metar();
 }
 
 window.onload = mainFunc;
