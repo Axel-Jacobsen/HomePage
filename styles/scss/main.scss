@@ -30,7 +30,7 @@ html, body {
 }
 
 .time {
-    font-family: 'Open Sans', serif;
+    font-family: 'Montserrat', serif;
     font-size: 64px;
     margin: 0;
 }
@@ -44,10 +44,16 @@ html, body {
 }
 
 .right {
+    // flex
     align-self: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    // text
     text-align: center;
-    font-family: 'Open Sans', serif;
+    font-family: 'Montserrat', serif;
     font-size: 18px;
+    // structure
+    height: 100%;
 }
 
 .temperature {

@@ -2,8 +2,7 @@
 <html>
 <head>
     <title>Home</title>
-    <script src="bundle.js"></script>
-    <script src="scripts/metar.js"></script>
+    <script src="scripts/index.js"></script>
     <link rel="stylesheet" href="styles/css/main.css">
     <link rel="stylesheet" href="styles/css/weather-icons.min.css">
 </head>
@@ -14,16 +13,12 @@
             <img class="centerImage" src="" alt="A saucy little image, no?" id="centerImage">
         </div>
         <div class="right">
-            <div class="weatherMain">
+            
                 <i class="" id="weathericon"></i>
                 <p class="temperature" id="temperature"></p>
-                <p id="skytext"></p>
                 <p class="wind" id="wind"></p>
-            </div>
+                <i id="clouds"></i>
         </div>
     </div>
 </body>
 </html>
-
-<!-- <script type="text/javascript" src="https://api.checkwx.com/widgets/metartaf.js"></script> -->
-<div class="checkwx-container" data-type="METAR" data-station="CYVR"></div>
