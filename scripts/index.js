@@ -67,8 +67,8 @@ function metar () {
             if (this.readyState === XMLHttpRequest.DONE && 200 === this.status) {
                 var t = JSON.parse(this.responseText);
                 metar = t['data'][0]['text'];
-
-                var temp = metar.match(tempGex)[1].replace('0', '').replace('M', '-');
+		console.log(metar);
+                var temp = metar.match(tempGex)[1].replace('M', '-');
                 var wind = metar.match(windGex);
                 var windDir = wind[1].indexOf('V') < 0 ? wind[1] : wind[1].split('V')[0] + ' V ' + wind[1].split('V')[1];
                 var windSpeed = parseInt(wind[2] * 1.852).toString() + (wind[3] ? wind[3] : '');
