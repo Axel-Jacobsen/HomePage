@@ -17,6 +17,18 @@ html, body {
     background-color: rgb(173, 157, 142);
 }
 
+// .back {
+//     background-size: cover;
+//     display: block;
+//     filter: blur(10px);
+//     -webkit-filter: blur(5px);
+//     height: 100%;
+//     left: 0;
+//     position: fixed;
+//     right: 0;
+//     z-index: 1;
+// }
+
 .horiz {
     // flex
     display: flex;
@@ -27,6 +39,7 @@ html, body {
     justify-content: space-evenly;
     // structure
     width: 100%;
+    z-index: 2;
 }
 
 .time {
@@ -45,7 +58,10 @@ html, body {
 
 .right {
     // flex
+    display: flex;
+    display: -webkit-flex;
     align-self: flex-end;
+    // align-content: space-between;
     justify-content: space-between;
     flex-direction: column;
     // text
@@ -53,7 +69,8 @@ html, body {
     font-family: 'Montserrat', serif;
     font-size: 18px;
     // structure
-    height: 100%;
+    height: 415px;
+    margin-bottom: 30px;
 }
 
 .temperature {
