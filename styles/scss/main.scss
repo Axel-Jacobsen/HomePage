@@ -34,7 +34,7 @@ html, body {
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
-    flex-basis: auto;
+/*    flex-basis: auto;*/
     align-items: center; 
     justify-content: space-evenly;
     // structure
@@ -61,7 +61,6 @@ html, body {
     display: flex;
     display: -webkit-flex;
     align-self: flex-end;
-    // align-content: space-between;
     justify-content: space-between;
     flex-direction: column;
     // text

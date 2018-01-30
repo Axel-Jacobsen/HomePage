@@ -14,7 +14,7 @@ html, body {
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
-  flex-basis: auto;
+  /*    flex-basis: auto;*/
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
