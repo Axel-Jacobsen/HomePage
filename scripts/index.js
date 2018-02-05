@@ -12,7 +12,7 @@ function metar () {
     var n = "metar";
     var a = "metar";
     var tempGex = /(M?\d{2})\/(?:M?)\d{2}/;
-    var windGex = /(\d{3}(?:V\d{3})?)(\d+)(G\d+)?KT/;
+    var windGex = /(\d{3}(?:V\d{3})?)|(?:VRB)(\d+)(G\d+)?KT/;
     var precip_forms = {
         'DZ': 'wi-rain',
         'SN': 'wi-snow',
@@ -70,11 +70,16 @@ function metar () {
 		console.log(metar);
                 var temp = metar.match(tempGex)[1].replace('M', '-');
                 var wind = metar.match(windGex);
-                var windDir = wind[1].indexOf('V') < 0 ? wind[1] : wind[1].split('V')[0] + ' V ' + wind[1].split('V')[1];
                 var windSpeed = parseInt(wind[2] * 1.852).toString() + (wind[3] ? wind[3] : '');
 
+                var windDir;
+                if (wind[1].includes('VRB')) {
+                    windDir = 'Variable'
+                } else {
+                    windDir = wind[1].indexOf('V') < 0 ? wind[1] : wind[1].split('V')[0] + ' V ' + wind[1].split('V')[1];
+                }
+
                 var sky_cond;
-                
                 for (precip in precip_forms) {
                     if (metar.includes(precip)) {
                     sky_cond = precip_forms[precip];
