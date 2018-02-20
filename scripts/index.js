@@ -11,9 +11,9 @@ function choosePic () {
             complete = true;
         } catch (err) {
             ++tries;
+            console.log(tries);
         }
     } while (!complete && tries < 3)
-    // document.getElementById("back").style.backgroundImage = "url(" + "WallPapers/" + images[randomNum] + ")";
 }
 
 function metar () {
@@ -21,7 +21,7 @@ function metar () {
     const n = "metar";
     const a = "metar";
     const tempGex = /(M?\d{2})\/(?:M?)\d{2}/;
-    const windGex = /(\d{3}(?:V\d{3})?)(\d+)(G\d+)?KT/;;
+    const windGex = /(\d{3}(?:V\d{3})?)(\d+)(G\d+)?KT/;
     const precip_forms = {
         'DZ': 'wi-rain',
         'SN': 'wi-snow',
@@ -81,7 +81,11 @@ function metar () {
                 let wind = metar.match(windGex);
                 let windSpeed = parseInt(wind[2] * 1.852).toString() + (wind[3] ? wind[3] : '');
                 console.log(wind);
-                let windDir = wind[1].indexOf('V') < 0 ? wind[1] : wind[1].split('V')[0] + ' V ' + wind[1]
+                let windDir = wind[1].indexOf('V') < 0 ? wind[1] : wind[1].split('V')[0] + ' V ' + wind[1];
+
+                if (temp.startsWith("0") || temp.startsWith("-0")) {
+                    temp = temp.replace("0", "")
+                }
 
                 let sky_cond;
                 for (precip in precip_forms) {
@@ -142,5 +146,5 @@ function mainFunc () {
     choosePic();
     metar();
 }
-// Colours: RGB = (x, (1.618) * x, (1.618^2) * x), 0 < 1.618^2 * x < 256
+
 window.onload = mainFunc;
