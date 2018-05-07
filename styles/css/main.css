@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Montserrat300,400|Open+Sans|Raleway");
 html, body {
   display: flex;
   display: -webkit-flex;
@@ -6,6 +6,8 @@ html, body {
   align-items: center;
   flex-direction: column;
   margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   height: 100%;
   width: 100%;
   background-color: #ad9d8e; }
@@ -21,7 +23,6 @@ html, body {
   z-index: 2; }
 
 .time {
-  font-family: 'Montserrat', serif;
   font-size: 64px;
   margin: 0; }
 
@@ -37,8 +38,7 @@ html, body {
   justify-content: space-between;
   flex-direction: column;
   text-align: center;
-  font-family: 'Montserrat', serif;
-  font-size: 18px;
+  font-size: 20px;
   height: 415px;
   margin-bottom: 30px; }
 

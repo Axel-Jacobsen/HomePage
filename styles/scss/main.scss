@@ -1,5 +1,5 @@
 // Main style fyle
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Montserrat300,400|Open+Sans|Raleway');
 
 html, body {
     // flex
@@ -9,7 +9,8 @@ html, body {
     align-items: center;
     flex-direction: column;
     margin: auto;
-
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     // structure
     height: 100%;
     width: 100%;
@@ -43,7 +44,6 @@ html, body {
 }
 
 .time {
-    font-family: 'Montserrat', serif;
     font-size: 64px;
     margin: 0;
 }
@@ -65,8 +65,7 @@ html, body {
     flex-direction: column;
     // text
     text-align: center;
-    font-family: 'Montserrat', serif;
-    font-size: 18px;
+    font-size: 20px;
     // structure
     height: 415px;
     margin-bottom: 30px;
