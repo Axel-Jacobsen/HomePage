@@ -6,7 +6,7 @@ html, body {
   align-items: center;
   flex-direction: column;
   margin: auto;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   height: 100%;
   width: 100%;
@@ -16,7 +16,6 @@ html, body {
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
-  /*    flex-basis: auto;*/
   align-items: center;
   justify-content: space-evenly;
   width: 100%;

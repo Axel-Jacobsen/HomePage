@@ -17,7 +17,7 @@ function choosePic () {
 }
 
 function metar () {
-    const k = "wx3f31992fe23995ee614ca37a59";
+    const k = "19911ab01e75557a5d5515be55";
     const n = "metar";
     const a = "metar";
     const tempGex = /(M?\d{2})\/(?:M?)\d{2}/;
@@ -75,8 +75,8 @@ function metar () {
         d.onreadystatechange = function() {
             if (this.readyState === XMLHttpRequest.DONE && 200 === this.status) {
                 let t = JSON.parse(this.responseText);
-                metar = t['data'][0]['text'];
-		console.log(metar);
+                metar = t['data'][0];
+		console.log(t)
                 let temp = metar.match(tempGex)[1].replace('M', '-');
                 let wind = metar.match(windGex);
                 let windSpeed = parseInt(wind[2] * 1.852).toString() + (wind[3] ? wind[3] : '');
