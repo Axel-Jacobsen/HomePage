@@ -11,8 +11,9 @@ html, body {
   color: whitesmoke;
   height: 100%;
   width: 100%;
-  background-repeat: round;
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
 
 .blur {
   background-attachment: fixed;
@@ -23,7 +24,7 @@ html, body {
 .horiz {
   display: flex;
   display: -webkit-flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
   background: inherit;

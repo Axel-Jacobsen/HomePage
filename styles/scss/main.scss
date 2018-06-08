@@ -15,8 +15,11 @@ html, body {
     // structure
     height: 100%;
     width: 100%;
-    background-repeat: round;
+    // background-repeat: round;
+    // background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     // background
     // background-color: rgb(173, 157, 142);
 }
@@ -36,7 +39,7 @@ html, body {
     // flex
     display: flex;
     display: -webkit-flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: center; 
     justify-content: space-evenly;
     background: inherit;
