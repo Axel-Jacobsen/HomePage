@@ -1,18 +1,19 @@
 function choosePic () {
 	
-    let images = ['xenqt1xpjbuz.jpg', 'streamline.jpeg', 'hLE28KQ.jpg', 'EeE9J.jpg', 'f4uy8su3kp201.jpg', 'aZScqx6.jpg', 'PsDD5FK.jpg', 'AhgFudA.jpg', 'Y7tO223.jpg', 'GeljQRN.jpg', 'oiZfq.jpg', 'LVaoA.jpg', 'hZ52wIX.jpg', 'paiv3jU.jpg', 'd0k128jwxi101.jpg', 'zlhxo4z.jpg', '.DS_Store', 'download.jpg', 'BQ6KjPa.jpg', 'hEQUZSu.jpg', 'kWr2TCv.jpg', 'rZhTV.jpg', 'xtRaaY5.jpg', '.j5qGtoB.jpg.icloud', '4fdxgR2.jpg', 'rEOPhmL.jpg', 'NO8ccpA.jpg', 'ra6M5zu.jpg', 'alena-aenami-castle2k.jpg', '6mnK4D0.jpg', 'alena-aenami-close-to-the-sun-1920.jpg', '8Bq53xj.jpg', 'pQS06lt.jpg', '21nnfsH.jpg', '1Qcwduq.jpg', '6zowermr3uc01.jpg', 'alena-aenami-stay-1k.jpg', 'Xik4G4c.jpg', '.fvMx4o6.jpg.icloud', 'Fq14Fsk.jpg', 'ti9jKcI.jpg', 'w7g4Tex.jpg', 'alena-aenami-quiet-1px.jpg', 'cgVCtwd.jpg', 'alena-aenami-003.jpg', 'vnHhC5m.jpg', 'vBcVD4o.jpg', 'alena-aenami-003-1.jpg', 'QqffsPx.jpg', 'q6Zfn7p.jpg', 'vwVqjMP.jpg', 'hbbpjec.jpg', 'alena-aenami-solar-1k.jpg', 'alena-aenami-lights1k1.jpg', 'AW16Y0i.jpg', 'aleks-dahlberg-146811.jpg', 'YWMo1IJ.jpg', 'q5u0Ngd.jpg', 'nyxv1wc26uf01.jpg', 'alena-aenami-mountains.jpg', 'alena-aenami-imhere1k.jpg', 'L6w1YUN.jpg', 'UZH8X4x.jpg', 'alena-aenami-atlast2k2.jpg', 'afBGhhB.jpg', 'X0sd0Ho.jpg', 'alena-aenami-7p-m-1k.jpg', 'alena-aenami-lunar-cover.jpg', 'fyFTaR2.jpg', '7SqL0BC.jpg', 'axytlMh.jpg', 'alena-aenami-lighthouse1k.jpg', '2dGXJp7.jpg', '3Dap2EL.jpg', 'sDsSu0m.jpg', 'hs6EUln.jpg', 'oSiYCN3.jpg', 'alena-aenami-way.jpg', 'unbenannt3yywl.jpg', 'tqt2ewnd9m901.jpg', 'HQLEbEg.jpg', 'vWHkb4I.jpg', 'TNAG0Po.jpg', 'zk4vozzbq3e01.jpg', 'alena-aenami-newwacom1-1-b-1k.jpg', '2rQoBh8.jpg', 'alena-aenami-s1k.jpg', 'alena-aenami-aenami-lunar.jpg', 'GLi3zS6.jpg', 'bqrrjo2v1uc01.jpg', 'SanFrancisco.jpg', 'QC2RUkE.jpg', 'alena-aenami-004-1k1.jpg', 'VebP6Ol.jpg', 'SpaceEx.png.jpg', 'alena-aenami-walls1k.jpg', 'uENexRC.jpg', 'kLES8HF.jpg', 'GGYgJ0G.jpg', 'mQUd1tO.jpg', 'h8R5xMB.jpg', '5gah229mbqd01.jpg', '9ui2qmc9fqd01.jpg', '38387192785_da1893f6d1_o.jpg', 'IW7I8dT.jpg', 'g4eou5yk0sf01.jpg', 'AdF1fVN.jpg', 'alena-aenami-million-little-pieces-1k.jpg', 'vQA6IsA.jpg', 'Spaceshuttle-Trough-Clouds.jpg', 'Attachment-1.jpeg'];
+    let images = ['xenqt1xpjbuz.jpg', 'streamline.jpeg', 'hLE28KQ.jpg', 'EeE9J.jpg', 'f4uy8su3kp201.jpg', 'aZScqx6.jpg', 'PsDD5FK.jpg', 'AhgFudA.jpg', 'Y7tO223.jpg', 'GeljQRN.jpg', 'oiZfq.jpg', 'LVaoA.jpg', 'hZ52wIX.jpg', 'paiv3jU.jpg', 'd0k128jwxi101.jpg', 'zlhxo4z.jpg', '.DS_Store', 'download.jpg', 'BQ6KjPa.jpg', 'hEQUZSu.jpg', 'kWr2TCv.jpg', 'rZhTV.jpg', 'xtRaaY5.jpg', '4fdxgR2.jpg', 'rEOPhmL.jpg', 'NO8ccpA.jpg', 'ra6M5zu.jpg', 'alena-aenami-castle2k.jpg', '6mnK4D0.jpg', 'alena-aenami-close-to-the-sun-1920.jpg', '8Bq53xj.jpg', 'pQS06lt.jpg', '21nnfsH.jpg', '1Qcwduq.jpg', '6zowermr3uc01.jpg', 'alena-aenami-stay-1k.jpg', 'Xik4G4c.jpg', 'Fq14Fsk.jpg', 'ti9jKcI.jpg', 'w7g4Tex.jpg', 'alena-aenami-quiet-1px.jpg', 'cgVCtwd.jpg', 'alena-aenami-003.jpg', 'vnHhC5m.jpg', 'vBcVD4o.jpg', 'alena-aenami-003-1.jpg', 'QqffsPx.jpg', 'q6Zfn7p.jpg', 'vwVqjMP.jpg', 'hbbpjec.jpg', 'alena-aenami-solar-1k.jpg', 'alena-aenami-lights1k1.jpg', 'AW16Y0i.jpg', 'aleks-dahlberg-146811.jpg', 'YWMo1IJ.jpg', 'q5u0Ngd.jpg', 'nyxv1wc26uf01.jpg', 'alena-aenami-mountains.jpg', 'alena-aenami-imhere1k.jpg', 'L6w1YUN.jpg', 'UZH8X4x.jpg', 'alena-aenami-atlast2k2.jpg', 'afBGhhB.jpg', 'X0sd0Ho.jpg', 'alena-aenami-7p-m-1k.jpg', 'alena-aenami-lunar-cover.jpg', 'fyFTaR2.jpg', '7SqL0BC.jpg', 'axytlMh.jpg', 'alena-aenami-lighthouse1k.jpg', '2dGXJp7.jpg', '3Dap2EL.jpg', 'sDsSu0m.jpg', 'hs6EUln.jpg', 'oSiYCN3.jpg', 'alena-aenami-way.jpg', 'unbenannt3yywl.jpg', 'tqt2ewnd9m901.jpg', 'HQLEbEg.jpg', 'vWHkb4I.jpg', 'TNAG0Po.jpg', 'zk4vozzbq3e01.jpg', 'alena-aenami-newwacom1-1-b-1k.jpg', '2rQoBh8.jpg', 'alena-aenami-s1k.jpg', 'alena-aenami-aenami-lunar.jpg', 'GLi3zS6.jpg', 'bqrrjo2v1uc01.jpg', 'SanFrancisco.jpg', 'QC2RUkE.jpg', 'alena-aenami-004-1k1.jpg', 'VebP6Ol.jpg', 'SpaceEx.png.jpg', 'alena-aenami-walls1k.jpg', 'uENexRC.jpg', 'kLES8HF.jpg', 'GGYgJ0G.jpg', 'mQUd1tO.jpg', 'h8R5xMB.jpg', '5gah229mbqd01.jpg', '9ui2qmc9fqd01.jpg', '38387192785_da1893f6d1_o.jpg', 'IW7I8dT.jpg', 'g4eou5yk0sf01.jpg', 'AdF1fVN.jpg', 'alena-aenami-million-little-pieces-1k.jpg', 'vQA6IsA.jpg', 'Spaceshuttle-Trough-Clouds.jpg', 'Attachment-1.jpeg'];
 
     let tries = 0;
     let complete = false;
     let randomNum = () => Math.floor(Math.random() * images.length);
     do {
-        try {
-            document.getElementById("centerImage").src = "WallPapers/" + images[randomNum()];
+        let img = images[randomNum()];
+        console.log(img);
+        if (img) {
+            document.getElementById("centerImage").src = "WallPapers/" + img;
             complete = true;
-        } catch (err) {
-            ++tries;
-            console.log(tries);
         }
+        ++tries;
+        console.log(tries);
     } while (!complete && tries < 3)
 }
 

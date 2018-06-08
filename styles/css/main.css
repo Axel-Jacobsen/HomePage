@@ -12,6 +12,17 @@ html, body {
   width: 100%;
   background-color: #ad9d8e; }
 
+.back {
+  background-size: cover;
+  display: block;
+  filter: blur(10px);
+  -webkit-filter: blur(5px);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1; }
+
 .horiz {
   display: flex;
   display: -webkit-flex;
