@@ -1,20 +1,10 @@
 function choosePic () {
 	
-    let images = ['xenqt1xpjbuz.jpg', 'streamline.jpeg', 'hLE28KQ.jpg', 'EeE9J.jpg', 'Kd2R9OsTzyp1xKk-nslORO7EF8wuxD3Mk2DetjUQtQg.jpg', 'MxDeMZ2iDt2YGIDWQzCyb8qlT0wgkZYswxOW8EHV5dM.jpg', 'f4uy8su3kp201.jpg', 'aZScqx6.jpg', 's7yoklHciONffazTYc70ba0zRV81F2FALn7wweilPbs.jpg', 'PsDD5FK.jpg', 'AhgFudA.jpg', 'Y7tO223.jpg', 'GeljQRN.jpg', 'oiZfq.jpg', 'LVaoA.jpg', 'hZ52wIX.jpg', 'paiv3jU.jpg', 'zlhxo4z.jpg', 'download.jpg', 'OUe6WiC.jpg', 'BQ6KjPa.jpg', 'hEQUZSu.jpg', 'kWr2TCv.jpg', 'rZhTV.jpg', 'xtRaaY5.jpg', '4fdxgR2.jpg', 'rEOPhmL.jpg', 'NO8ccpA.jpg', 'ra6M5zu.jpg', 'alena-aenami-castle2k.jpg', '6mnK4D0.jpg', 'alena-aenami-close-to-the-sun-1920.jpg', '8Bq53xj.jpg', 'pQS06lt.jpg', '21nnfsH.jpg', '1Qcwduq.jpg', '6zowermr3uc01.jpg', 'alena-aenami-stay-1k.jpg', 'Xik4G4c.jpg', 'Fq14Fsk.jpg', '01.jpg', '03.jpg', 'LH_ymceHpC1t5dDSW7yMcYLLQ_GX8b17_xEnnbIKBVs.jpg', 'ti9jKcI.jpg', 'w7g4Tex.jpg', 'alena-aenami-quiet-1px.jpg', 'cgVCtwd.jpg', '02.jpg', 'alena-aenami-003.jpg', 'vnHhC5m.jpg', 'vBcVD4o.jpg', 'alena-aenami-003-1.jpg', 'QqffsPx.jpg', 'q6Zfn7p.jpg', 'vwVqjMP.jpg', 'hbbpjec.jpg', '05.jpg', 'alena-aenami-solar-1k.jpg', 'alena-aenami-lights1k1.jpg', 'AW16Y0i.jpg', 'YWMo1IJ.jpg', 'q5u0Ngd.jpg', '04.jpg', 'alena-aenami-mountains.jpg', 'alena-aenami-imhere1k.jpg', 'L6w1YUN.jpg', 'UZH8X4x.jpg', '08.jpg', 'afBGhhB.jpg', 'X0sd0Ho.jpg', 'alena-aenami-7p-m-1k.jpg', 'alena-aenami-lunar-cover.jpg', '3aE0J8sJTvzlon0uE-zJ4zi4yUYK9USgr9H0YOGDSTI.jpg', 'fyFTaR2.jpg', '7SqL0BC.jpg', 'axytlMh.jpg', 'alena-aenami-lighthouse1k.jpg', '2dGXJp7.jpg', '3Dap2EL.jpg', 'sDsSu0m.jpg', 'hs6EUln.jpg', 'oSiYCN3.jpg', 'alena-aenami-way.jpg', 'unbenannt3yywl.jpg', 'hilow.jpg', 'tqt2ewnd9m901.jpg', 'HQLEbEg.jpg', 'vWHkb4I.jpg', 'TNAG0Po.jpg', 'zk4vozzbq3e01.jpg', '2rQoBh8.jpg', 'alena-aenami-s1k.jpg', 'alena-aenami-aenami-lunar.jpg', 'GLi3zS6.jpg', 'bqrrjo2v1uc01.jpg', 'SanFrancisco.jpg', 'QC2RUkE.jpg', 'alena-aenami-004-1k1.jpg', 'VebP6Ol.jpg', 'SpaceEx.png.jpg', 'DSC_1319.jpg', 'xR9u_9O6j7nWkoe7_6Uy8hICozkzP4mC94opYA1A5tA.jpg', 'uENexRC.jpg', 'kLES8HF.jpg', '4367acgy0aw01.jpg', '1chyo7B65P9hlUEV69dxsXnAtC1-uMyfghfcSky2Rcs.jpg', '1xpe3oojlsr01.jpg', 'vwebCEc9meCPtx9_U38WEyZ0mB9Z4uSOuHzpwqX8NO4.jpg', 'GGYgJ0G.jpg', 'mQUd1tO.jpg', 'h8R5xMB.jpg', '5gah229mbqd01.jpg', '9ui2qmc9fqd01.jpg', 'IW7I8dT.jpg', 'g4eou5yk0sf01.jpg', 'AdF1fVN.jpg', 'alena-aenami-million-little-pieces-1k.jpg', 'vQA6IsA.jpg', 'Spaceshuttle-Trough-Clouds.jpg', 'Attachment-1.jpeg'];
+    let images = ['xenqt1xpjbuz.jpg', 'streamline.jpeg', 'hLE28KQ.jpg', 'EeE9J.jpg', 'Kd2R9OsTzyp1xKk-nslORO7EF8wuxD3Mk2DetjUQtQg.jpg', 'MxDeMZ2iDt2YGIDWQzCyb8qlT0wgkZYswxOW8EHV5dM.jpg', 'f4uy8su3kp201.jpg', 'aZScqx6.jpg', 's7yoklHciONffazTYc70ba0zRV81F2FALn7wweilPbs.jpg', 'PsDD5FK.jpg', 'AhgFudA.jpg', 'Y7tO223.jpg', 'GeljQRN.jpg', '8bda2kkeqla11.jpg', 'oiZfq.jpg', 'LVaoA.jpg', 'hZ52wIX.jpg', 'paiv3jU.jpg', 'zlhxo4z.jpg', '.DS_Store', 'download.jpg', 'OUe6WiC.jpg', 'BQ6KjPa.jpg', 'hEQUZSu.jpg', 'kWr2TCv.jpg', '.59nv0c297s111.jpg.icloud', 'rZhTV.jpg', 'xtRaaY5.jpg', '4fdxgR2.jpg', 'curiosity.jpg', 'rEOPhmL.jpg', 'NO8ccpA.jpg', 'ra6M5zu.jpg', 'alena-aenami-castle2k.jpg', '6mnK4D0.jpg', 'alena-aenami-close-to-the-sun-1920.jpg', '8Bq53xj.jpg', 'pQS06lt.jpg', '21nnfsH.jpg', '1Qcwduq.jpg', '6zowermr3uc01.jpg', 'M20ktNJ.jpg', 'alena-aenami-stay-1k.jpg', 'Xik4G4c.jpg', 'Fq14Fsk.jpg', '01.jpg', '03.jpg', 'LH_ymceHpC1t5dDSW7yMcYLLQ_GX8b17_xEnnbIKBVs.jpg', 'ti9jKcI.jpg', 'w7g4Tex.jpg', 'alena-aenami-quiet-1px.jpg', '.BenMountain.tiff.icloud', 'cgVCtwd.jpg', '02.jpg', 'alena-aenami-003.jpg', 'vnHhC5m.jpg', 'vBcVD4o.jpg', 'alena-aenami-003-1.jpg', 'QqffsPx.jpg', 'q6Zfn7p.jpg', 'vwVqjMP.jpg', 'hbbpjec.jpg', '05.jpg', 'alena-aenami-solar-1k.jpg', 'alena-aenami-lights1k1.jpg', 'AW16Y0i.jpg', 'YWMo1IJ.jpg', '.4k-wallpaper-cloudy-daylight-1146802.jpg.icloud', 'q5u0Ngd.jpg', '04.jpg', 'alena-aenami-mountains.jpg', 'alena-aenami-imhere1k.jpg', 'L6w1YUN.jpg', 'UZH8X4x.jpg', '08.jpg', 'afBGhhB.jpg', 'X0sd0Ho.jpg', 'alena-aenami-7p-m-1k.jpg', '8a8uhghrqk911.jpg', 'alena-aenami-lunar-cover.jpg', '3aE0J8sJTvzlon0uE-zJ4zi4yUYK9USgr9H0YOGDSTI.jpg', 'fyFTaR2.jpg', '7SqL0BC.jpg', 'axytlMh.jpg', 'alena-aenami-lighthouse1k.jpg', '2dGXJp7.jpg', '3Dap2EL.jpg', 'sDsSu0m.jpg', 'hs6EUln.jpg', 'oSiYCN3.jpg', 'alena-aenami-way.jpg', 'unbenannt3yywl.jpg', 'hilow.jpg', 'tqt2ewnd9m901.jpg', 'HQLEbEg.jpg', 'vWHkb4I.jpg', 'TNAG0Po.jpg', 'zk4vozzbq3e01.jpg', '2rQoBh8.jpg', 'alena-aenami-aenami-lunar.jpg', 'GLi3zS6.jpg', 'bqrrjo2v1uc01.jpg', 'SanFrancisco.jpg', 'QC2RUkE.jpg', 'alena-aenami-004-1k1.jpg', 'VebP6Ol.jpg', 'SpaceEx.png.jpg', '3p17q2wp0na11.jpg', 'DSC_1319.jpg', 'xR9u_9O6j7nWkoe7_6Uy8hICozkzP4mC94opYA1A5tA.jpg', 'uENexRC.jpg', 'kLES8HF.jpg', '.adventure-alps-black-and-white-1146642.jpg.icloud', '4367acgy0aw01.jpg', '1chyo7B65P9hlUEV69dxsXnAtC1-uMyfghfcSky2Rcs.jpg', '.4k-wallpaper-cloudy-dark-clouds-1146804.jpg.icloud', '1xpe3oojlsr01.jpg', 'vwebCEc9meCPtx9_U38WEyZ0mB9Z4uSOuHzpwqX8NO4.jpg', 'GGYgJ0G.jpg', 'mQUd1tO.jpg', 'h8R5xMB.jpg', '5gah229mbqd01.jpg', '.apk30cpfwsa11.jpg.icloud', '9ui2qmc9fqd01.jpg', 'IW7I8dT.jpg', 'g4eou5yk0sf01.jpg', 'AdF1fVN.jpg', 'alena-aenami-million-little-pieces-1k.jpg', 'vQA6IsA.jpg', 'Spaceshuttle-Trough-Clouds.jpg', 'Attachment-1.jpeg']
 
-    let tries = 0;
-    let complete = false;
     let randomNum = () => Math.floor(Math.random() * images.length);
-    do {
-        try {
-            let img = images[randomNum()];
-            document.body.style.backgroundImage = "url(WallPapers/" + img + ")";
-            complete = true;
-        } catch {
-            ++tries;
-            console.log(tries);
-        }
-    } while (!complete && tries < 3)
+    let img = images[randomNum()];
+    document.body.style.backgroundImage = "url(WallPapers/" + img + ")";
 }
 
 function metar () {
@@ -80,7 +70,7 @@ function metar () {
 		console.log(t)
                 let temp = metar.match(tempGex)[1].replace('M', '-');
                 let wind = metar.match(windGex);
-                let windSpeed = parseInt(wind[2] * 1.852).toString() + (wind[3] ? wind[3] : '');
+                let windSpeed = parseInt(wind[2] * 1.852).toString() + (wind[3] ? parseInt(wind[3] * 1.852) : '').toString();
                 console.log(wind);
                 let windDir = wind[1].indexOf('V') < 0 ? wind[1] : wind[1].split('V')[0] + ' V ' + wind[1];
 
