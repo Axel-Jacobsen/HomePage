@@ -11,7 +11,7 @@ function metar () {
     const n = "metar";
     const a = "metar";
     const tempGex = /(M?\d{2})\/(?:M?)\d{2}/;
-    const windGex = /(\d{3}(?:V\d{3})?)(\d+)(G\d+)?KT/;
+    const windGex = /(\d{3}(?:V\d{3})?)(\d+)G(\d+)?KT/;
     const precip_forms = {
         'DZ': 'wi-rain',
         'SN': 'wi-snow',
@@ -69,7 +69,7 @@ function metar () {
 		console.log(t)
                 let temp = metar.match(tempGex)[1].replace('M', '-');
                 let wind = metar.match(windGex);
-                let windSpeed = parseInt(wind[2] * 1.852).toString() + (wind[3] ? parseInt(wind[3].replace("G", "") * 1.852) : '').toString();
+                let windSpeed = parseInt(wind[2] * 1.852).toString() + (wind[3] ? parseInt(wind[3] * 1.852) : '').toString();
                 console.log(wind);
                 let windDir = wind[1].indexOf('V') < 0 ? wind[1] : wind[1].split('V')[0] + ' V ' + wind[1];
 
